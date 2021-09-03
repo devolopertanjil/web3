@@ -1,0 +1,635 @@
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Common css start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    width: 970px;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+@font-face{
+    src: url(../font-family/MyriadPro-Light.otf);
+    font-family: 'MyriadPro-Light';
+}
+@font-face{
+    src: url(../font-family/MYRIADPRO-REGULAR.OTF);
+    font-family: 'MyriadPro-Regular';
+}
+@font-face{
+    src: url(../font-family/MYRIADPRO-SEMIBOLD.OTF);
+    font-family: 'MyriadPro-Semibold';
+}
+@font-face{
+    src: url(../font-family/MYRIADPRO-BOLD.OTF);
+    font-family: 'MyriadPro-Bold';
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --hover: #f18d26;
+    --first: #3ca2a2;
+    --second: #215a6d;
+    --third: #bf0a11;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Common css end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Header part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#header_part{
+    background-color: #fff;
+    padding: 13px 0 17px;
+}
+.flow{
+    display: flex;
+}
+
+.logo{
+    width: 83px;
+    height: 88px;
+    line-height: 117px;
+}
+.header_head {
+	width: 665px;
+    margin-right: 45px;
+    line-height: 117px;
+}
+.header_head h2{
+    color: #3ca2a2;
+    font-size: 26px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+.header_number {
+    width: 218px;
+    text-align: right;
+    line-height: 117px;
+}
+.header_number a{
+    color: #b76262;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Header part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Menu part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#menu_part{
+    background: linear-gradient(to top,#ae1010 0%, #cf0511 100%);
+}
+.flow{
+    display: flex;
+}
+.main_menu{
+    width: 90%;
+}
+.main_menu ul li{
+    float: left;
+}
+.main_menu ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    padding: 0 18px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.main_menu ul li a:hover{
+    background-color: var(--hover);
+}
+.social_icon{
+    width: 10%;
+    text-align: right;
+    padding: 11px 0;
+}
+.social_icon a {
+    float: left;
+    width: 27px;
+    height: 27px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 27px;
+    color: #be0b10;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    margin-left: 5px;
+}
+.social_icon a:hover{
+    color: #fff;
+    background-color: var(--hover);
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Menu part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Banner part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#banner_part{
+    padding: 74px 0 77px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.banner_text {
+	width: 437.9px;
+	float: left;
+}
+.banner_text h1 {
+    color: #215a6d;
+    font-size: 36px;
+    font-weight: 400;
+    
+}
+
+.banner_text h1 span {
+    font-size: 48px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: -14px;
+}
+.banner_text p {
+    color: #215a6d;
+    font-size: 16px;
+    padding-right: 150px;
+    line-height: 22px;
+    margin-top: 12px;
+}
+.banner_text a {
+    padding: 0 25px;
+    background: #92c7a3;
+    line-height: 42px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    margin-top: 38px;
+}
+.banner_text a:hover{
+    background-color: var(--hover);
+}
+.banner_cont{
+    position: relative;
+}
+.banner_img{
+    position: absolute;
+    right: 0;
+    bottom: -75px;
+    width: 592px;
+    float: left;
+}
+.banner_img img{
+    width: 100%;
+    max-width: 100%;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Banner part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Service part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#service_part{
+    padding: 0 0 88px;
+    text-align: center;
+}
+.service_row{
+    margin-top: 48px;
+}
+.service_col {
+	width: 29.21%;
+	float: left;
+	margin-right: 60px;
+}
+.service_col h3{
+    font-size: 24px;
+    color: #3ca2a2;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:capitalize;
+}
+.service_col img{
+    margin-top: 26px;
+}
+.service_col p{
+    font-size: 13px;
+    color: #215a6d;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.service_col .btn{
+    margin-top: 19px;
+}
+.service_col .btn i{
+    color: #c70811;
+    height: 14px;
+    width: 14px;
+    margin-right: 7px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.service_col .btn a{
+    color: #92c7a3;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    transition: all linear .3s;
+}
+.service_col .btn a:hover{
+    color: var(--hover);
+}
+.service_col .btn a:hover i{
+    color: var(--hover);
+}
+
+.service_col:nth-child(3){
+    margin-right: 0;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Service part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Notice part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#notice_part{
+    background: #dfece6;
+    padding: 30px 0;
+
+}
+.note_cont{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.note_col {
+	width: 48.45%;
+	margin-right: 30px;
+}
+
+.note_col:last-child{
+    margin-right: 0px;
+}
+
+.common_head h2{
+    color: var(--second);
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.common_head h2::before{
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+}
+.common_head h2::after {
+	position: absolute;
+	content: "";
+	background: var(--third);
+	width: 54px;
+	height: 2px;
+	left: 0;
+	bottom: -1px;
+	z-index: 1;
+}
+.note_inner{
+    margin-top: 33px;
+}
+.note_inner img {
+	margin-top: 8px;
+}
+.note_inner ul li{
+    color: var(--first);
+    font-weight: 600;
+    font-size: 16px;
+    background: #fff;
+    border-bottom: 1px solid var(--first);
+    padding-left: 15px;
+    line-height: 42px;
+}
+.note_inner ul li:last-child{
+    border-bottom: 0;
+}
+.note_inner ul li i{
+    float: right;
+    background: var(--third);
+    color: #fff;
+    padding: 0 18px;
+    line-height: 42px;
+}
+.note_inner img{
+    width: 100%;
+    max-width: 100%;
+    border: 4px solid #fff;
+}
+.note_col .btn{
+    margin-top: 23px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.note_col .btn a{
+    color: var(--third);
+}
+.note_col .btn i{
+    color: var(--third);
+    margin-right: 5px;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Notice part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Gallery part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#gallery_part{
+    padding: 75px 0;
+}
+.gal_cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gal_col {
+	width: 31.27%;
+	margin-right: 30px;
+}
+.gal_col:last-child{
+    margin-right: 0;
+}
+.gal_col .common_head{
+    margin-bottom: 40px;
+}
+.gal_col .common_head h2::before{
+    background: #eaeaea;
+}
+.new_txt h3{
+    color: var(--first);
+    font-size: 18px;
+    font-weight: 600;
+}
+.new_txt p{
+    color: var(--second);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 60px;
+}
+.new_txt{
+    position: relative;
+}
+.new_txt::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: -33px;
+	width: 100%;
+	height: 1px;
+	background: #eaeaea;
+}
+.new_txt:nth-child(3)::after{
+    display: none;
+}
+.gal_col .btn{
+    margin-top: -24px;
+}
+.gal_col .btn a{
+    color: var(--first);
+}
+.gal_col .btn a i{
+    color: var(--third);
+    margin-right: 5px;
+}
+.gal_col ul li{
+    color: var(--second);
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.gal_col ul li i{
+    color: var(--third);
+    width: 16px;
+    margin-right: 8px;
+}
+.gal_col .sec {
+	margin-top: 51px;
+}
+.pto_gal ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pto_gal ul li{
+    width: 44.48%;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    border: 4px solid #eaeaea;
+}
+.pto_gal ul li img{
+    width: 100%;
+    max-width: 100%;
+    
+}
+.pto_gal ul li:nth-child(2),
+.pto_gal ul li:last-child{
+    margin-right: 0;
+}
+.gal_col .pto {
+	margin-top: 44px;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Gallery part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Header part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#doctors_part{
+    padding: 0 0 100px;
+}
+.doc_cont .common_head h2::before{
+	background: #eaeaea;
+}
+.flx{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    
+}
+.doc_col {
+	width: 31.41%;
+	margin-right: 28px;
+}
+.doc_col img{
+    width: 100%;
+    max-width: 100%;
+    
+} 
+.doc_col h3{
+    color: var(--first);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.doc_col h6{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+.doc_col h5{
+    color: var(--third);
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+.doc_col:nth-child(3){
+    margin-right: 0;
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Header part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Footer part start
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+#footer_part{
+    padding: 23px 0 0;
+}
+.footer_top{
+    background-color: #222222;
+}
+.footer_top .logo{
+    width: 20%;
+}
+.footer_top .logo a img{
+    width: 100%;
+    max-width: 100%;
+}
+.footer_top .name {
+	width: 80%;
+	margin-top: 55px;
+	margin-left: -90px;
+	font-size: 25px;
+	color: var(--first);
+	font-family: 'MyriadPro-Semibold';
+}
+
+.top_row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bot_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    padding-bottom: 28px;
+}
+.foot_col {
+	width: 21.90%;
+	margin-right: 40px;
+}
+.foot_col h3{
+    color: var(--first);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+.foot_col ul li{
+    color: #c6ded9;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.foot_col ul li i{
+    margin-right: 5px;
+    color: var(--third);
+}
+.foot_col:last-child{
+    margin-right: 0;
+}
+.footer_bottom{
+    background-color: var(--third);
+    text-align: center;
+}
+.footer_bottom p{
+    color: #c6ded9;
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    padding: 18px 0;
+
+}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                Footer part end
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+
+
+
+
+
+
+
+
+
